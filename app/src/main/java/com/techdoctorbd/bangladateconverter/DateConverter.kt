@@ -46,19 +46,19 @@ object DateConverter {
         }
 
         if (month == 1 && date < 15) {
-            monthName = "${(MONTH_LENGTH_DECEMBER - 15) + date} ${monthNames[8]} $yearInt"
+            monthName = "${(MONTH_LENGTH_DECEMBER - 15) + date} ${monthNames[8]} ${yearInt!! - 1}"
         } else if (month == 1 && date >= 15) {
-            monthName = "${(date - 14)} ${monthNames[9]} $yearInt"
+            monthName = "${(date - 14)} ${monthNames[9]} ${yearInt!! - 1}"
         } else if (month == 2 && date < 14) {
-            monthName = "${(MONTH_LENGTH_JANUARY - 14) + date} ${monthNames[9]} $yearInt"
+            monthName = "${(MONTH_LENGTH_JANUARY - 14) + date} ${monthNames[9]} ${yearInt!! - 1}"
         } else if (month == 2 && date >= 14) {
-            monthName = "${(date - 13)} ${monthNames[10]} $yearInt"
+            monthName = "${(date - 13)} ${monthNames[10]} ${yearInt!! - 1}"
         } else if (month == 3 && date < 15) {
-            monthName = "${(MONTH_LENGTH_FEBRUARY - 13) + date} ${monthNames[10]} $yearInt"
+            monthName = "${(MONTH_LENGTH_FEBRUARY - 13) + date} ${monthNames[10]} ${yearInt!! - 1}"
         } else if (month == 3 && date >= 15) {
-            monthName = "${(date - 14)} ${monthNames[11]} $yearInt"
+            monthName = "${(date - 14)} ${monthNames[11]} ${yearInt!! - 1}"
         } else if (month == 4 && date < 14) {
-            monthName = "${(MONTH_LENGTH_MARCH - 14) + date} ${monthNames[11]} $yearInt"
+            monthName = "${(MONTH_LENGTH_MARCH - 14) + date} ${monthNames[11]} ${yearInt!! - 1}"
         } else if (month == 4 && date >= 14) {
             monthName = "${(date - 13)} ${monthNames[0]} $yearInt"
         } else if (month == 5 && date < 15) {
