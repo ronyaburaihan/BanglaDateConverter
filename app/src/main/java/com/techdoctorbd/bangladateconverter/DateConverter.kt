@@ -63,8 +63,8 @@ object DateConverter {
         }
 
 
-        /*The length of Ashwin month is 30 days every year but in 2020 the length of Ashwin month is 31 days that's why I use this condition to check that*/
-        KARTIK_START_IN_OCTOBER = if (year == 2020) 17 else 16
+        /*The length of Ashwin month is 30 days every year but from 2020 the length of Ashwin month is 31 days that's why I use this condition to check that*/
+        KARTIK_START_IN_OCTOBER = if (year > 2019) 17 else 16
 
         if (month == 1 && date < MAGH_START_IN_JANUARY) {
 
